@@ -6,6 +6,7 @@ const colorPalette = {
   red: "#ffaaa7",
   gray: "#536162",
   blue: "#0ba6ff",
+  muiBlue: "#1769aa",
 };
 
 export default colorPalette;
