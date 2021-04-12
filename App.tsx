@@ -1,12 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import HomeScreen from "./components/HomeScreen";
+import LoginScreen from "./components/LoginScreen";
+import colorPalette from "./colors/colorHex";
 
 export default function App() {
+  const userLoggedIn = false;
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
+      {userLoggedIn ? <HomeScreen /> : <LoginScreen />}
     </View>
   );
 }
@@ -14,8 +19,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: colorPalette.white,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
