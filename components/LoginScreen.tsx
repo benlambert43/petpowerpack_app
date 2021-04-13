@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import colorPalette from "../colors/colorHex";
 import { Button } from "react-native-elements";
-import "../media/welcome.gif";
 
 const LoginScreen = () => {
   return (
@@ -19,11 +18,22 @@ const LoginScreen = () => {
         </Text>
       </View>
 
-      <View style={styles.introAnimation}>
-        <Image
-          style={{ width: "70%", height: "50%" }}
-          source={require("../media/welcome.gif")}
-        />
+      <View style={styles.Intro}>
+        <View style={{ marginTop: 10 }}>
+          <Text style={{ color: colorPalette.gray, textAlign: "center" }}>
+            Create an account
+          </Text>
+        </View>
+        <View style={{ marginTop: 10 }}>
+          <Text style={{ color: colorPalette.gray }}>
+            Sign in on two devices
+          </Text>
+        </View>
+        <View style={{ marginTop: 10 }}>
+          <Text style={{ color: colorPalette.gray, textAlign: "center" }}>
+            Give one device to your pet
+          </Text>
+        </View>
       </View>
 
       <View style={styles.buttonGroup}>
@@ -59,6 +69,8 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 30,
     marginBottom: 30,
+    marginLeft: 30,
+    marginRight: 30,
     flexDirection: "column",
   },
   welcomeMessage: {
@@ -66,7 +78,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-end",
   },
-  introAnimation: {
+  Intro: {
     flex: 2,
     maxWidth: "100%",
     alignItems: "center",
