@@ -74,8 +74,8 @@ const LoginScreen = () => {
               }}
               raised
               title="Create an Account"
-              accessibilityLabel="Learn more about this purple button"
-              onPress={() => console.log("Button was pressed.")}
+              accessibilityLabel="Create an Account"
+              onPress={() => console.log("Create an Account was pressed.")}
             />
           </View>
 
@@ -87,8 +87,8 @@ const LoginScreen = () => {
               }}
               raised
               title="Sign In"
-              accessibilityLabel="Learn more about this purple button"
-              onPress={() => console.log("Button was pressed.")}
+              accessibilityLabel="Sign in"
+              onPress={() => console.log("Login Button was pressed.")}
             />
           </View>
         </View>
